@@ -653,86 +653,91 @@ body{
 
 
 /* *************************about section********************  */
-
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     background: #121a26;
-    padding: 20px 20px;
+    padding: 50px 20px;
 }
 
-.about-content{
+.about-content {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #1a2b3a;
     border-radius: 10px;
-}
-
-.contain{
-    padding: 20px ;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    padding: 40px;
+    max-width: 100%;
     width: 100%;
-    height: auto;
-    line-height: 2;
 }
 
-.about-heading p{
-    font-size: 1rem;
-    margin-bottom: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    align-self: flex-start;
-}
-
-.about-heading{
+.contain {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: auto;
-    line-height: 0;
-    flex-direction: column;
-    padding: 30px 0;
-}
-.about-content h2{
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    gap: 40px;
 }
 
-.about-content p{
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: white;
+.row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    max-width: 45%;
+}
+
+.image-a img {
     width: 100%;
-    padding:0 10%;
-}
-
-.about-content span{
-    font-weight: bold;
-    color: yellow;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.about-content img{
-    width: 300px;
+    max-width: 300px;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid white;
+    border-radius: 10px;
+}
 
+.about-heading {
+    margin-top: 20px;
+}
+
+.about-heading h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.about-heading p {
+    font-size: 1.1rem;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.about-paras {
+    max-width: 50%;
+}
+
+.about-paras p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: white;
+    text-align: justify;
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .contain {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row1 {
+        max-width: 100%;
+    }
+
+    .about-paras {
+        max-width: 90%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about {
         padding: 30px 15px;
@@ -742,25 +747,38 @@ body{
         padding: 20px;
     }
 
-    .contain {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+    .about-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-heading p {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+
+    .about-paras p {
+        font-size: 1.1rem;
+        text-align: justify;
     }
 
     .image-a img {
-        width: 220px;
-        height: 220px;
+        max-width: 250px;
+        border-radius: 50%;
     }
+}
 
+@media screen and (max-width: 480px) {
     .about-heading h2 {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 
     .about-paras p {
         font-size: 1rem;
-        text-align: center;
-        padding: 0 5%;
+        padding: 0 10px;
+    }
+
+    .image-a img {
+        max-width: 200px;
     }
 }
 
@@ -783,18 +801,21 @@ body{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .heading-a h2 {
     color: white;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px;
+    
 }
 
 .btn {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 /* ****************** Button Styling ****************** */
@@ -817,8 +838,13 @@ body{
 
 /* ****************** Mobile Responsive (768px and below) ****************** */
 @media screen and (max-width: 768px) {
+.bg{
+    display: block;
+}
+
     .heading-a h2 {
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .btn button {
