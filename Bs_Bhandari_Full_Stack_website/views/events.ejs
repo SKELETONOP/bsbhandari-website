@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+
+  <body class="bg-[#121a26] text-white font-poppins min-h-screen flex flex-col">
+    <%- include('partials/nav') %>
+
+    <section class="events flex-grow py-20 md:py-32 px-5">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="events-heading mb-14">
+          <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-[#17bebb] leading-tight">
+            Upcoming Events
+          </h2>
+          <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Join BS Bhandari at his transformative events and workshops. Don't miss out on these opportunities for growth!
+          </p>
+        </div>
+
+        <div class="events-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+          <!-- Event Card 1 -->
+          <div class="event-card bg-[#1a2b3a] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-blue-500/20 group">
+            <img src="/IMAGES/events-1.png" alt="Event 1" class="w-full h-[220px] object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="event-details p-6 text-left">
+              <h3 class="text-2xl font-bold mb-3 text-[#17bebb] group-hover:text-yellow-400 transition-colors duration-300">
+                Success Summit 2025
+              </h3>
+              <p class="mb-2 text-gray-300"><strong>Date:</strong> <span class="font-medium">April 20, 2025</span></p>
+              <p class="mb-4 text-gray-300"><strong>Location:</strong> <span class="font-medium">New Delhi, India</span></p>
+              <p class="mb-6 text-gray-400 leading-relaxed text-sm">
+                Unlock your potential with powerful strategies for personal and business growth. Learn from industry leaders and gain actionable insights.
+              </p>
+              <a href="#" class="event-btn inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold text-base px-6 py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                Register Now
+                <i class="fas fa-arrow-right ml-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="event-card bg-[#1a2b3a] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-blue-500/20 group">
+            <img src="/IMAGES/events-1.png" alt="Event 2" class="w-full h-[220px] object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="event-details p-6 text-left">
+              <h3 class="text-2xl font-bold mb-3 text-[#17bebb] group-hover:text-yellow-400 transition-colors duration-300">
+                Leadership Masterclass
+              </h3>
+              <p class="mb-2 text-gray-300"><strong>Date:</strong> <span class="font-medium">May 15, 2025</span></p>
+              <p class="mb-4 text-gray-300"><strong>Location:</strong> <span class="font-medium">Mumbai, India</span></p>
+              <p class="mb-6 text-gray-400 leading-relaxed text-sm">
+                Develop cutting-edge leadership skills and transform your career with BS Bhandari. A must-attend for aspiring leaders.
+              </p>
+              <a href="#" class="event-btn inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold text-base px-6 py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                Register Now
+                <i class="fas fa-arrow-right ml-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="event-card bg-[#1a2b3a] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-blue-500/20 group">
+            <img src="/IMAGES/events-1.png" alt="Event 3" class="w-full h-[220px] object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div class="event-details p-6 text-left">
+              <h3 class="text-2xl font-bold mb-3 text-[#17bebb] group-hover:text-yellow-400 transition-colors duration-300">
+                Digital Marketing Deep Dive
+              </h3>
+              <p class="mb-2 text-gray-300"><strong>Date:</strong> <span class="font-medium">June 10, 2025</span></p>
+              <p class="mb-4 text-gray-300"><strong>Location:</strong> <span class="font-medium">Virtual Event</span></p>
+              <p class="mb-6 text-gray-400 leading-relaxed text-sm">
+                Master the latest digital marketing strategies to boost your online presence and business growth.
+              </p>
+              <a href="#" class="event-btn inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold text-base px-6 py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                Register Now
+                <i class="fas fa-arrow-right ml-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-20">
+          <h3 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-8">Can't Make it to an Event?</h3>
+          <p class="text-lg text-gray-300 max-w-xl mx-auto mb-8">
+            Explore our past events and workshops, or consider booking a private session with BS Bhandari for personalized guidance.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="#" class="inline-flex items-center justify-center bg-[#17bebb] hover:bg-[#149ca7] text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#17bebb] focus:ring-opacity-50">
+              View Past Events <i class="fas fa-history ml-3"></i>
+            </a>
+            <a href="/contact" class="inline-flex items-center justify-center bg-transparent border-2 border-white hover:border-[#17bebb] text-white hover:text-[#17bebb] font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+              Book a Session <i class="fas fa-calendar-alt ml-3"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+    <script src="/JS/mobileresponsive.js"></script>
+  </body>
+</html>

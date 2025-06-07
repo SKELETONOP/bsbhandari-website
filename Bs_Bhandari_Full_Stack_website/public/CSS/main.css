@@ -1,0 +1,41 @@
+/* Prevent horizontal overflow globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+/* Ensure images and media do not overflow */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix for your grid containers or flex containers */
+.grid-container,
+.grid_bg,
+.about-content,
+.upcoming-m,
+.book-appointment,
+.about {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* For your text containers with fixed widths, add max-width */
+.upcoming-details,
+.about-paras,
+.grid-item.text {
+  max-width: 100%;
+}
+
+/* Remove any negative margins or excessive padding that could cause overflow */

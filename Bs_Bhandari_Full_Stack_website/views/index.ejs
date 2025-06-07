@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body class="overflow-x-hidden font-poppins box-border">
+    <!-- ****************************NOTIFICATION BAR *************************-->
+    <%- include('./partials/nav') %>
+    <!-- ******************HERO SECTION (FIXED) ********************* -->
+    <section class="relative w-full min-h-screen bg-[#121a26]">
+      <img
+        src="/IMAGES/hero.png"
+        alt="Hero Image"
+        class="absolute inset-0 w-full h-full object-cover z-0 brightness-[0.5]"
+      />
+      <div
+        class="absolute inset-0 z-10 flex items-center justify-center md:justify-start text-center md:text-left px-4 sm:px-6 md:px-[10%]"
+      >
+        <div class="hero-content text-white z-20 max-w-2xl">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4 leading-snug drop-shadow-lg"
+          >
+            Don't fear standing alone greatness begins with
+            <span class="text-red-600">belief</span>
+          </h1>
+          <p
+            class="text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md"
+          >
+            Stand firm in your beliefs, for at the end of the day, your opinion
+            and intuition are uniquely yours. No one can change that or make you
+            feel otherwise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- **************UPCOMING EVENTS SECTION ************************* -->
+    <div class="upcoming-m items-center w-full h-auto bg-[#121a26] px-5 py-5">
+      <div
+        class="border rounded-2xl px-5 py-5 mx-2 my-2 flex flex-col md:flex-row justify-around bg-[#1a2b3a] shadow-lg w-[95%] md:w-auto text-center"
+      >
+        <div
+          class="image-u w-full md:w-[45%] flex justify-center md:justify-start"
+        >
+          <img
+            src="/IMAGES/events-1.png"
+            alt="events-1"
+            class="w-full max-w-sm h-auto rounded-2xl"
+          />
+        </div>
+        <div
+          class="upcoming-details flex flex-col justify-center w-full md:w-1/2 p-2 text-center md:text-left"
+        >
+          <div class="uppr">
+            <h2 class="text-2xl md:text-3xl mb-5 font-['Gill_Sans'] text-white">
+              The Bhandari Wave Show
+            </h2>
+            <p class="text-base md:text-xl leading-relaxed text-white">
+              <span class="font-bold text-yellow-400 font-['Times_New_Roman']"
+                >4th April, Sun 2025 <br
+              /></span>
+              Venue: Devi Ahilya University Auditorium, Davv Takshila Parisar,
+              Indore, Madhya Pradesh 452001
+            </p>
+          </div>
+          <div class="btn mt-5">
+            <button
+              class="events-btn bg-[#17bebb] text-white px-6 py-3 rounded-full font-bold cursor-pointer transition-all hover:bg-[#14a4a0] w-full md:w-auto"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- **************ABOUT SECTION ************************* -->
+    <section
+      class="about flex flex-col md:flex-row justify-center items-center w-full h-auto bg-[#121a26] px-5 py-8 md:py-12"
+    >
+      <div
+        class="about-content shadow-lg bg-[#1a2b3a] rounded-lg px-5 md:px-10 py-10 max-w-full w-full"
+      >
+        <div
+          class="contain flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left"
+        >
+          <div
+            class="row1 flex flex-col items-center md:items-start max-w-full md:max-w-[45%]"
+          >
+            <div class="image-a">
+              <img
+                src="/IMAGES/about-1.jpg"
+                alt="about-1"
+                class="w-full max-w-xs h-auto rounded-full md:rounded-lg"
+              />
+            </div>
+            <div class="about-heading mt-5">
+              <h2 class="text-2xl md:text-3xl text-white">About Bs Bhandari</h2>
+              <p class="text-sm md:text-lg text-yellow-400 font-bold mt-1">
+                Motivational Speaker | Business Coach
+              </p>
+            </div>
+          </div>
+          <div class="about-paras max-w-full md:max-w-[50%] mt-6 md:mt-0">
+            <p
+              class="text-base md:text-xl leading-loose text-white text-justify px-2 md:px-0"
+            >
+              Bs Bhandari is a motivational speaker and a life coach who has
+              been helping people to achieve their goals and dreams for the past
+              10 years. He has been featured in many magazines and newspapers
+              for his work. He has also been a guest on many TV shows and radio
+              stations. Bs Bhandari has helped thousands of people to achieve
+              their goals and dreams. He has helped people to overcome their
+              fears and obstacles. He has helped people to find their passion
+              and purpose in life. He has helped people to live a life of
+              happiness and fulfillment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **************BOOK AND APPOINTMENT SECTION ************************* -->
+    <div
+      class="book-appointment w-full px-5 bg-[#121a26] flex justify-center py-5"
+    >
+      <div
+        class="bg-[#1a2b3a] px-5 py-5 rounded-2xl text-center shadow-lg w-full max-w-4xl flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="heading-a">
+          <h2 class="text-white text-2xl md:text-3xl font-poppins">
+            Book An Appointment
+          </h2>
+        </div>
+        <div class="btn w-full md:w-auto">
+          <button 
+            class="bg-[#17bebb] text-white text-base md:text-xl px-6 py-3 rounded-full font-bold cursor-pointer transition-all ease-in-out hover:bg-[#139a94] hover:scale-105 w-full md:w-auto"
+          >
+            <a href="/data/appointment">Book Now</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- **************TESTIMONIALS SECTION ************************* -->
+    <section class="grid-container bg-[#121a26] flex justify-center">
+      <div
+        class="grid_bg grid grid-cols-1 md:grid-cols-3 gap-5 max-w-full px-5 py-5 items-center shadow-lg bg-[#1a2b3a] rounded-lg justify-center mx-2 md:mx-5"
+      >
+        <div
+          class="grid-item image px-5 py-5 rounded-lg shadow-lg bg-[#121a26] text-center"
+        >
+          <img
+            src="/IMAGES/HARD WORK.png"
+            alt="Speaker 1"
+            class="w-full max-w-xs mx-auto rounded-lg h-auto"
+          />
+        </div>
+        <div
+          class="grid-item text flex flex-col justify-start px-5 py-5 text-white rounded-lg shadow-lg bg-[#121a26]"
+        >
+          <h2
+            class="text-2xl md:text-3xl mb-2 font-poppins text-center md:text-left"
+          >
+            Want To Transform Your Business?
+          </h2>
+          <p class="text-base md:text-xl font-poppins">
+            Enhance your professional skillset with training designed to help
+            you enhance your business and reach your goals. Courses in
+            communication, leadership, and project management will guide you and
+            your business toward success.
+          </p>
+        </div>
+
+        <div
+          class="grid-item image px-5 py-5 rounded-lg shadow-lg bg-[#121a26] text-center"
+        >
+          <img
+            src="/IMAGES/introspection 2.0.png"
+            alt="Speaker 2"
+            class="w-full max-w-xs mx-auto rounded-lg h-auto"
+          />
+        </div>
+        <div
+          class="grid-item text flex flex-col justify-start px-5 py-5 text-white rounded-lg shadow-lg bg-[#121a26]"
+        >
+          <h2
+            class="text-2xl md:text-3xl mb-2 font-poppins text-center md:text-left"
+          >
+            Do You Want Success in Life? – Everyone Wants It!
+          </h2>
+          <p class="text-base md:text-xl font-poppins">
+            This is the actual place where you will get to see your Unseen Inner
+            Power that will change your life from nothing to everything. This is
+            the Time to get yourself a new motive to make yourself more
+            successful from yesterday and make your tomorrow better.
+          </p>
+        </div>
+        <div
+          class="grid-item image px-5 py-5 rounded-lg shadow-lg bg-[#121a26] text-center"
+        >
+          <img
+            src="/IMAGES/life.png"
+            alt="Person Smiling"
+            class="w-full max-w-xs mx-auto rounded-lg h-auto"
+          />
+        </div>
+        <div
+          class="grid-item text flex flex-col justify-start px-5 py-5 text-white rounded-lg shadow-lg bg-[#121a26]"
+        >
+          <h2
+            class="text-2xl md:text-3xl mb-2 font-poppins text-center md:text-left"
+          >
+            About BS BHANDARI
+          </h2>
+          <p class="text-base md:text-xl font-poppins">
+            Currently, Mr. BS BHANDARI is regarded as India's Best Motivational
+            Speaker. Over Millions of people have been inspired by his speeches
+            and workshops, Motivational seminars, etc. Mr. Jain has been
+            consistently achieving new targeting milestones in the field of
+            Network marketing, inspirational coaching, motivational
+            skill-building.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- what clients say -->
+       <section class="grid-container bg-[#121a26] flex justify-center">
+      </section>
+
+    <section class="client-testimonials bg-[#121a26] py-12 px-5">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12">
+          What Clients <span class="text-red-600">Say</span>
+        </h2>
+        <div class="overflow-x-auto flex snap-x snap-mandatory pb-4 scrollbar-hide">
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 snap-center">
+            <div class="bg-[#1a2b3a] rounded-lg shadow-lg p-6 text-left">
+              <div class="flex items-center mb-4">
+                <img
+                  src="/IMAGES/review.png" alt="Client Name"
+                  class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#17bebb]"
+                />
+                <div>
+                  <p class="text-lg font-semibold text-white">Ravi Sharma</p>
+                  <p class="text-sm text-gray-400">CEO, Tech Solutions</p>
+                </div>
+              </div>
+              <p class="text-base text-gray-300 italic">
+                "BS Bhandari's insights transformed our sales strategy. His sessions are not just motivating, but also filled with practical, actionable advice. Highly recommend for any business leader!"
+              </p>
+              <div class="text-yellow-400 text-sm mt-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 snap-center">
+            <div class="bg-[#1a2b3a] rounded-lg shadow-lg p-6 text-left">
+              <div class="flex items-center mb-4">
+                <img
+                  src="/IMAGES/review.png" alt="Client Name"
+                  class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#17bebb]"
+                />
+                <div>
+                  <p class="text-lg font-semibold text-white">Priya Singh</p>
+                  <p class="text-sm text-gray-400">Entrepreneur</p>
+                </div>
+              </div>
+              <p class="text-base text-gray-300 italic">
+                "I was struggling with motivation, but Bs Bhandari's 'Belief' mantra truly resonated. His coaching helped me rediscover my purpose and pursue my dreams with renewed energy."
+              </p>
+              <div class="text-yellow-400 text-sm mt-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 snap-center">
+            <div class="bg-[#1a2b3a] rounded-lg shadow-lg p-6 text-left">
+              <div class="flex items-center mb-4">
+                <img
+                  src="/IMAGES/review.png" alt="Client Name"
+                  class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#17bebb]"
+                />
+                <div>
+                  <p class="text-lg font-semibold text-white">Anand Kumar</p>
+                  <p class="text-sm text-gray-400">Sales Manager</p>
+                </div>
+              </div>
+              <p class="text-base text-gray-300 italic">
+                "The 'Transform Your Business' workshop was a game-changer. It provided clear frameworks and a boost in confidence. Our team's performance has significantly improved."
+              </p>
+              <div class="text-yellow-400 text-sm mt-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- *************FOOTER SECTION************ -->
+    <%- include('./partials/footer') %>
+
+    <script
+      src="https://kit.fontawesome.com/b47dbbf1c5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/JS/mobileresponsive.js"></script>
+  </body>
+</html>

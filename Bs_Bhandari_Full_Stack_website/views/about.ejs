@@ -1,0 +1,98 @@
+<%- include('./partials/head') %>
+<body class="bg-[#121a26] text-white">
+  <%- include('./partials/nav') %>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="py-24 px-8 text-center">
+    <div class="flex flex-wrap max-w-[1200px] mx-auto gap-12 items-center justify-between">
+      <div class="flex-1 min-w-[320px] max-w-[450px] text-center relative p-4 md:p-6 lg:p-8">
+        <img 
+          src="/IMAGES/about-1.jpg" 
+          alt="BS Bhandari"
+          class="w-full rounded-[12px] shadow-[0px_8px_16px_rgba(0,0,0,0.4)] transition-transform duration-300 ease-in-out hover:scale-105"
+        >
+      </div>
+
+      <div class="flex-1 min-w-[320px] max-w-[600px] p-8 md:p-10 animate-fade-in text-left">
+        <h2 class="text-[2.8rem] mb-8 uppercase tracking-wide text-[#17bebb]">About BS Bhandari</h2>
+        <p class="text-[1.2rem] leading-9 mb-6 text-[#d9e3ea]">
+          BS Bhandari is a renowned motivational speaker and business coach dedicated to helping individuals unlock their potential. With years of experience in leadership, personal development, and entrepreneurship, he has empowered thousands to achieve their goals.
+        </p>
+        <p class="text-[1.2rem] leading-9 mb-8 text-[#d9e3ea]">
+          Through his insightful speeches and engaging podcasts, he inspires people to take action, break barriers, and build a mindset for success.
+        </p>
+        <a 
+          href="/contact"
+          class="inline-block text-white text-[18px] px-8 py-4 rounded-[8px] shadow-md transition-all duration-300 ease-in-out bg-gradient-to-br from-[#17bebb] to-[#149c99] hover:from-[#149c99] hover:to-[#0f7e7a] hover:-translate-y-1 hover:shadow-lg"
+        >
+          Contact Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MISSION & VISION ================= -->
+  <section class="py-20 px-8 bg-[#0d1117] text-center">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-[#17bebb] uppercase mb-6">Our Mission & Vision</h2>
+      <p class="text-lg text-[#d9e3ea] leading-8 mb-4">
+        At BS Bhandari, our mission is to spark transformational change by instilling confidence, discipline, and a growth mindset in individuals from all walks of life.
+      </p>
+      <p class="text-lg text-[#d9e3ea] leading-8">
+        Our vision is to build a global community where purpose-driven living leads to real success—both personally and professionally.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="py-24 px-8 bg-[#121a26] text-center">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl text-[#17bebb] font-bold uppercase mb-12">What People Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-[#1f2a38] p-6 rounded-xl shadow-md">
+          <p class="text-lg text-[#d9e3ea] mb-4">"BS Bhandari changed my life! His talks helped me rediscover my passion and build a roadmap to achieve it."</p>
+          <h4 class="text-[#17bebb] font-semibold">– Anjali Mehta, Entrepreneur</h4>
+        </div>
+        <div class="bg-[#1f2a38] p-6 rounded-xl shadow-md">
+          <p class="text-lg text-[#d9e3ea] mb-4">"A powerhouse of motivation. His sessions are energetic, realistic, and deeply inspiring!"</p>
+          <h4 class="text-[#17bebb] font-semibold">– Rohit Sharma, College Lecturer</h4>
+        </div>
+        <div class="bg-[#1f2a38] p-6 rounded-xl shadow-md">
+          <p class="text-lg text-[#d9e3ea] mb-4">"His podcast is part of my daily routine now. It's like a personal coach in my pocket."</p>
+          <h4 class="text-[#17bebb] font-semibold">– Priya Khandelwal, Student</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= IMPACT SECTION ================= -->
+  <section class="py-20 px-8 bg-[#0d1117] text-center">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-[#17bebb] uppercase mb-12">Our Impact</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
+        <div>
+          <h3 class="text-5xl font-bold text-[#17bebb]">500+</h3>
+          <p class="text-lg mt-2 text-[#d9e3ea]">Workshops Conducted</p>
+        </div>
+        <div>
+          <h3 class="text-5xl font-bold text-[#17bebb]">50K+</h3>
+          <p class="text-lg mt-2 text-[#d9e3ea]">Lives Impacted</p>
+        </div>
+        <div>
+          <h3 class="text-5xl font-bold text-[#17bebb]">12+</h3>
+          <p class="text-lg mt-2 text-[#d9e3ea]">Years Experience</p>
+        </div>
+        <div>
+          <h3 class="text-5xl font-bold text-[#17bebb]">100%</h3>
+          <p class="text-lg mt-2 text-[#d9e3ea]">Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <%- include('./partials/footer') %>
+
+  <script src="/JS/mobileresponsive.js"></script>
+</body>
+</html>
