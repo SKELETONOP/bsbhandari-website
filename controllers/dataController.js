@@ -10,3 +10,12 @@ exports.postFormData = (req, res) => {
 exports.getAppointment = (req, res) => {
   res.render('appointment', { title: 'Appointment' });
 }
+
+exports.postAppointment = (req, res) => {
+  const appointmentData = req.body;
+  console.log('Appointment Data Received:', appointmentData);
+  
+  // Here you can process the appointment data, e.g., save it to a database
+
+  res.redirect('/data/appointment'); // Redirect to the appointment page after submission
+}
